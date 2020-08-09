@@ -13,6 +13,10 @@ class DuckHelper {
 public class Duckling {
   public static void makeSound(String sound) {
     // LearnToSpeak learner = s -> System.out.println(s);
+
+    /*
+    The :: operator tells Java to call the println() method later. 
+    */
      LearnToSpeak learner = System.out::println;
     DuckHelper.teacher(sound, learner);
   }
