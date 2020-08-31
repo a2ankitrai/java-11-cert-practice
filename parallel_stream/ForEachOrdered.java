@@ -14,6 +14,7 @@ class ForEachOrdered {
 
     long s1 = System.currentTimeMillis();
     List.of(5,4,3,2,1)
+        //  .stream()
         .parallelStream()
         .map(w -> doWork(w))
         .forEachOrdered(s -> System.out.print(s +" "));
