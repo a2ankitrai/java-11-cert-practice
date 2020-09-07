@@ -11,8 +11,6 @@ class FilesDelete {
         System.out.println(Files.deleteIfExists(b)); //false
 
         Path a = Paths.get("./vulture/feathers.txt");
-
-
         Files.createFile(a);
         System.out.println("File created");
         Files.delete(a);
