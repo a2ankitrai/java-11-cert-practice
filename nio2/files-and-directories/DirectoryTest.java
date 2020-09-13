@@ -12,10 +12,10 @@ class DirectoryTest {
           parent directories if they do not already exist, including bison,
           field, and pasture.
           */
-          Files.createDirectories(Path.of("./bison/field/pasture/green"));  
+          Files.createDirectories(Path.of("./bison/field/pasture/green"));
 
           /**
-          * creates a new directory, field, in the directory
+          * creates a new directory, pond, in the directory
             /bison, assuming /bison exists; or else an exception is thrown.
           */
           Files.createDirectory(Path.of("./bison/pond"));
